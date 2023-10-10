@@ -113,7 +113,7 @@ def main():
         padding: 0px 0px;
         text-align: center;
     ">
-        <p>Made by <a href='https://twitter.com/mehmet_ba7'>Mehmet Balioglu</a></p>
+        <p>Made by <a href='https://twitter.com/mehmet_ba7'>THE TECH WHIZZES</a></p>
     </div>
     """
 
@@ -258,7 +258,7 @@ def main():
         # Check if there are no generated question-answer pairs in the session state
         if 'eval_set' not in st.session_state:
             # Use the generate_eval function to generate question-answer pairs
-            num_eval_questions = 10  # Number of question-answer pairs to generate
+            num_eval_questions = 5  # Number of question-answer pairs to generate
             st.session_state.eval_set = generate_eval(
                 loaded_text, num_eval_questions, 3000)
 
@@ -268,8 +268,8 @@ def main():
                 f"""
                 <div class="css-card">
                 <span class="card-tag">Question {i + 1}</span>
-                    <p style="font-size: 12px;">{qa_pair['question']}</p>
-                    <p style="font-size: 12px;">{qa_pair['answer']}</p>
+                    <p style="font-size: 12px; font-color:#000000;">{qa_pair['question']}</p>
+                    <p style="font-size: 12px; font-color:#000000;">{qa_pair['answer']}</p>
                 </div>
                 """,
                 unsafe_allow_html=True,
