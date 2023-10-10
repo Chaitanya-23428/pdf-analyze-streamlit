@@ -168,7 +168,7 @@ def main():
         """,
         unsafe_allow_html=True,
     )
-    st.sidebar.image("pdfbot.png")
+    st.sidebar.image("PdfBot.png")
 
 
    
